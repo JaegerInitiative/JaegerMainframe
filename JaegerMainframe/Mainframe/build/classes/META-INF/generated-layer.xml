@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="OptionsDialog">
+        <file name="com-jaegerinitiative-mainframe-UserManagementOptionsPanelController.instance">
+            <!--com.jaegerinitiative.mainframe.UserManagementOptionsPanelController-->
+            <attr
+                methodvalue="org.netbeans.spi.options.OptionsCategory.createCategory" name="instanceCreate"/>
+            <attr name="controller" newvalue="com.jaegerinitiative.mainframe.UserManagementOptionsPanelController"/>
+            <attr
+                bundlevalue="com.jaegerinitiative.mainframe.Bundle#OptionsCategory_Name_UserManagement" name="categoryName"/>
+            <attr name="iconBase" stringvalue="com/jaegerinitiative/mainframe/image001.png"/>
+            <attr
+                bundlevalue="com.jaegerinitiative.mainframe.Bundle#OptionsCategory_Keywords_UserManagement" name="keywords"/>
+            <attr name="keywordsCategory" stringvalue="UserManagement"/>
+        </file>
+    </folder>
+</filesystem>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.2//EN"
+                            "http://www.netbeans.org/dtds/filesystem-1_2.dtd">
+<filesystem>
+    <folder name="xml">
+        <folder name="entities">
+            <folder name="com_jaegerinitiative_sherryview">
+                <file name="SherryViewEditorTopComponent" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--com.jaegerinitiative.sherryview.SVEditorTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//com.jaegerinitiative.sherryview//SherryViewEditorTopComponent//EN"/>
+                </file>
+                <file name="SVEditorTopComponent" url="nbres:/org/netbeans/modules/settings/resources/properties-1_0.dtd">
+                    <!--com.jaegerinitiative.sherryview.SVEmpTopComponent-->
+                    <attr name="hint.originalPublicID" stringvalue="-//com.jaegerinitiative.sherryview//SVEditorTopComponent//EN"/>
+                </file>
+            </folder>
+        </folder>
+        <folder name="memory">
+            <folder name="com">
+                <folder name="jaegerinitiative">
+                    <folder name="sherryview">
+                        <file name="SVEditorTopComponent">
+                            <!--com.jaegerinitiative.sherryview.SVEditorTopComponent-->
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_jaegerinitiative_sherryview/SherryViewEditorTopComponent.instance"/>
+                        </file>
+                        <file name="SVEmpTopComponent">
+                            <!--com.jaegerinitiative.sherryview.SVEmpTopComponent-->
+                            <attr name="settings.providerPath" stringvalue="xml/lookups//com_jaegerinitiative_sherryview/SVEditorTopComponent.instance"/>
+                        </file>
+                    </folder>
+                </folder>
+            </folder>
+        </folder>
+        <folder name="lookups">
+            <folder name="com_jaegerinitiative_sherryview">
+                <file name="SherryViewEditorTopComponent.instance">
+                    <!--com.jaegerinitiative.sherryview.SVEditorTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="com.jaegerinitiative.sherryview.SVEditorTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="com.jaegerinitiative.sherryview.SVEditorTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+                <file name="SVEditorTopComponent.instance">
+                    <!--com.jaegerinitiative.sherryview.SVEmpTopComponent-->
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.create" name="instanceCreate"/>
+                    <attr
+                        methodvalue="org.netbeans.api.settings.Factory.properties" name="settings.convertor"/>
+                    <attr name="settings.instanceClass" stringvalue="com.jaegerinitiative.sherryview.SVEmpTopComponent"/>
+                    <attr name="settings.instanceOf" stringvalue="com.jaegerinitiative.sherryview.SVEmpTopComponent"/>
+                    <attr boolvalue="true" name="xmlproperties.preventStoring"/>
+                </file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Menu">
+        <folder name="Window">
+            <file name="com-jaegerinitiative-sherryview-SherryViewEditorTopComponentTopComponent.shadow">
+                <!--com.jaegerinitiative.sherryview.SVEditorTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/com-jaegerinitiative-sherryview-SherryViewEditorTopComponentTopComponent.instance"/>
+            </file>
+            <file name="com-jaegerinitiative-sherryview-SVEditorTopComponentTopComponent.shadow">
+                <!--com.jaegerinitiative.sherryview.SVEmpTopComponent-->
+                <attr name="originalFile" stringvalue="Actions/Window/com-jaegerinitiative-sherryview-SVEditorTopComponentTopComponent.instance"/>
+            </file>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="SherryViewEditorTopComponentTopComponent.settings">
+                <!--com.jaegerinitiative.sherryview.SVEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="com.jaegerinitiative.sherryview.SVEditorTopComponent"/>
+</settings>
+]]></file>
+            <file name="SVEditorTopComponentTopComponent.settings">
+                <!--com.jaegerinitiative.sherryview.SVEmpTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE settings PUBLIC "-//NetBeans//DTD Session settings 1.0//EN" "http://www.netbeans.org/dtds/sessionsettings-1_0.dtd">
+<settings version="1.0">
+  <instance class="com.jaegerinitiative.sherryview.SVEmpTopComponent"/>
+</settings>
+]]></file>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="SherryViewEditorTopComponentTopComponent.wstcref">
+                    <!--com.jaegerinitiative.sherryview.SVEditorTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="SherryViewEditorTopComponentTopComponent"/>
+  <state opened="false"/>
+</tc-ref>
+]]></file>
+            </folder>
+            <folder name="properties">
+                <file name="SVEditorTopComponentTopComponent.wstcref">
+                    <!--com.jaegerinitiative.sherryview.SVEmpTopComponent--><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tc-ref PUBLIC "-//NetBeans//DTD Top Component in Mode Properties 2.0//EN" "http://www.netbeans.org/dtds/tc-ref2_0.dtd">
+<tc-ref version="2.0">
+  <tc-id id="SVEditorTopComponentTopComponent"/>
+  <state opened="true"/>
+</tc-ref>
+]]></file>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Actions">
+        <folder name="Window">
+            <file name="com-jaegerinitiative-sherryview-SherryViewEditorTopComponentTopComponent.instance">
+                <!--com.jaegerinitiative.sherryview.SVEditorTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="com.jaegerinitiative.sherryview.SVEditorTopComponent"/>
+                <attr name="preferredID" stringvalue="SherryViewEditorTopComponentTopComponent"/>
+                <attr
+                    bundlevalue="com.jaegerinitiative.sherryview.Bundle#CTL_SherryViewEditorTopComponentAction" name="displayName"/>
+                <attr name="iconBase" stringvalue="com/jaegerinitiative/sherryview/image001.png"/>
+            </file>
+            <file name="com-jaegerinitiative-sherryview-SVEditorTopComponentTopComponent.instance">
+                <!--com.jaegerinitiative.sherryview.SVEmpTopComponent-->
+                <attr
+                    methodvalue="org.openide.windows.TopComponent.openAction" name="instanceCreate"/>
+                <attr name="component" newvalue="com.jaegerinitiative.sherryview.SVEmpTopComponent"/>
+                <attr name="preferredID" stringvalue="SVEditorTopComponentTopComponent"/>
+                <attr
+                    bundlevalue="com.jaegerinitiative.sherryview.Bundle#CTL_SVEditorTopComponentAction" name="displayName"/>
+            </file>
+        </folder>
+    </folder>
+</filesystem>

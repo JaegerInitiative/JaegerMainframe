@@ -1,0 +1,9 @@
+C:\Program Files\NetBeans 8.0_1\NetBeans 8.0\platform=1422295601444
+cluster.C:/Users/adam.RMANET/Documents/GitHub/JaegerMainframe/JaegerMainframe/build/cluster=1430329136052
+cluster.C:/Program Files/NetBeans 8.0_1/NetBeans 8.0/platform=1422295601444
+user=1430329136052
+crc=7
+locale=en_US
+branding=jaegermainframe
+java.version=1.8.0_40
+java.vm.version=25.40-b25

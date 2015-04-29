@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><module codename="Xstream">
+    <module_version install_time="1430329134408" last="true" origin="installer" specification_version="1.0">
+        <file crc="1247070690" name="config/Modules/Xstream.xml"/>
+        <file crc="1210393400" name="modules/Xstream.jar"/>
+        <file crc="1161417734" name="modules/ext/xstream-1.4.8.jar"/>
+    </module_version>
+</module>

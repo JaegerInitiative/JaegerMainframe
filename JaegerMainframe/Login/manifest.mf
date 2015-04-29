@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+AutoUpdate-Show-In-Client: true
+OpenIDE-Module: com.jaegerinitiative.login
+OpenIDE-Module-Install: com/jaegerinitiative/login/Installer.class
+OpenIDE-Module-Localizing-Bundle: com/jaegerinitiative/login/Bundle.properties
+OpenIDE-Module-Specification-Version: 1.0
+
