@@ -41,9 +41,5 @@
   <bounds x="633" y="249" width="806" height="457" />
     </editor-area>
     <screen width="1366" height="768"/>
-    <active-mode name="properties"/>
     <toolbar configuration="Standard" preferred-icon-size="24"/>
-    <tc-list>
-  <tc-id id="SVEditorTopComponentTopComponent"/>
-    </tc-list>
 </windowmanager>

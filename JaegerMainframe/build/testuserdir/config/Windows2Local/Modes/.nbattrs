@@ -11,6 +11,6 @@
         <attr name="WinSys-TCRef-Order" stringvalue="output"/>
     </fileobject>
     <fileobject name="properties">
-        <attr name="WinSys-TCRef-Order" stringvalue="SVEditorTopComponentTopComponent/properties"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="properties"/>
     </fileobject>
 </attributes>
