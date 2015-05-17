@@ -6,5 +6,9 @@
             <file>file:/C:/Users/adam.RMANET/Documents/NetBeansProjects/JaegerMainframe/Data/src/com/jaegerinitiative/data/Jaeger.java</file>
             <file>file:/C:/Users/adam.RMANET/Documents/NetBeansProjects/JaegerMainframe/Data/src/com/jaegerinitiative/data/XMLTestJaegerCreator.java</file>
         </group>
+        <group>
+            <file>file:/C:/Users/Amy/Documents/JaegerMainframe/JaegerMainframe/Data/src/com/jaegerinitiative/fakedata/JaegerListSingleton.java</file>
+            <file>file:/C:/Users/Amy/Documents/JaegerMainframe/JaegerMainframe/Data/src/com/jaegerinitiative/fakedata/FakeJaegerEnums.java</file>
+        </group>
     </open-files>
 </project-private>
