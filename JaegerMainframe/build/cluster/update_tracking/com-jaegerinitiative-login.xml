@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.jaegerinitiative.login">
-    <module_version install_time="1431898830584" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1431901086807" last="true" origin="installer" specification_version="1.0">
         <file crc="2929917315" name="config/Modules/com-jaegerinitiative-login.xml"/>
-        <file crc="3961484205" name="modules/com-jaegerinitiative-login.jar"/>
+        <file crc="2018040093" name="modules/com-jaegerinitiative-login.jar"/>
     </module_version>
 </module>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.jaegerinitiative.sherryview">
-    <module_version install_time="1431900739928" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1431901087844" last="true" origin="installer" specification_version="1.0">
         <file crc="1199837534" name="config/Modules/com-jaegerinitiative-sherryview.xml"/>
-        <file crc="717054582" name="modules/com-jaegerinitiative-sherryview.jar"/>
+        <file crc="3228408072" name="modules/com-jaegerinitiative-sherryview.jar"/>
     </module_version>
 </module>
