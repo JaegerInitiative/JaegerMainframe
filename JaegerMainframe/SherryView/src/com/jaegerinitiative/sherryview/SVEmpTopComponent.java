@@ -5,8 +5,10 @@
 */
 package com.jaegerinitiative.sherryview;
 
+import com.jaegerinitiative.fakedata.GenerateJaegerList;
 import com.jaegerinitiative.data.Jaeger;
-import com.jaegerinitiative.sherryview.SVEmpTableModel.ColumnList;
+import com.jaegerinitiative.fakedata.GenerateJobsList;
+import com.jaegerinitiative.sherryview.SVEmpTableModel.ColumnListEmp;
 import java.awt.Component;
 import java.awt.event.ActionListener;
 import javafx.event.ActionEvent;
@@ -69,7 +71,7 @@ public final class SVEmpTopComponent extends TopComponent {
         jScrollPane1 = new javax.swing.JScrollPane();
         _empTable = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        _taskItemTable = new javax.swing.JTable();
 
         _empTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -91,7 +93,7 @@ public final class SVEmpTopComponent extends TopComponent {
             _empTable.getColumnModel().getColumn(2).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent._empTable.columnModel.title2")); // NOI18N
         }
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        _taskItemTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"CWMS Maintenance", "200", "250"},
                 {"REGI Maintenance", "400", "700"},
@@ -102,11 +104,11 @@ public final class SVEmpTopComponent extends TopComponent {
                 "Job", "Used", "Allocated"
             }
         ));
-        jScrollPane2.setViewportView(jTable2);
-        if (jTable2.getColumnModel().getColumnCount() > 0) {
-            jTable2.getColumnModel().getColumn(0).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent.jTable2.columnModel.title0")); // NOI18N
-            jTable2.getColumnModel().getColumn(1).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent.jTable2.columnModel.title1")); // NOI18N
-            jTable2.getColumnModel().getColumn(2).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent.jTable2.columnModel.title2")); // NOI18N
+        jScrollPane2.setViewportView(_taskItemTable);
+        if (_taskItemTable.getColumnModel().getColumnCount() > 0) {
+            _taskItemTable.getColumnModel().getColumn(0).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent._taskItemTable.columnModel.title0")); // NOI18N
+            _taskItemTable.getColumnModel().getColumn(1).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent._taskItemTable.columnModel.title1")); // NOI18N
+            _taskItemTable.getColumnModel().getColumn(2).setHeaderValue(org.openide.util.NbBundle.getMessage(SVEmpTopComponent.class, "SVEmpTopComponent._taskItemTable.columnModel.title2")); // NOI18N
         }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -127,9 +129,9 @@ public final class SVEmpTopComponent extends TopComponent {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable _empTable;
+    private javax.swing.JTable _taskItemTable;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
     // End of variables declaration//GEN-END:variables
     @Override
     public void componentOpened() {
@@ -149,90 +151,16 @@ public final class SVEmpTopComponent extends TopComponent {
     }
     private void fillComponents() {
         
+        _empTable= new SVEmpTable();
         _empTable.setModel(new SVEmpTableModel(GenerateJaegerList.getInstance()));
-        TableColumn pokeColumn = _empTable.getColumnModel().getColumn(ColumnList.POKE.getColumn());
-        _empTable.getColumn(pokeColumn.getIdentifier()).setCellRenderer(new ButtonRenderer());
-        _empTable.getColumn(pokeColumn.getIdentifier()).setCellEditor(
-        new ButtonEditor(new JCheckBox()));
+        
+        _taskItemTable.setModel(new SVJobTableModel(GenerateJobsList.getInstance()));
     }
     void readProperties(java.util.Properties p) {
         String version = p.getProperty("version");
         // TODO read your settings according to their version
     }
     
-    class ButtonRenderer extends JButton implements TableCellRenderer {
-        
-        public ButtonRenderer() {
-            setOpaque(true);
-        }
-        
-        public Component getTableCellRendererComponent(JTable table, Object value,
-                boolean isSelected, boolean hasFocus, int row, int column) {
-            if (isSelected) {
-                setForeground(table.getSelectionForeground());
-                setBackground(table.getSelectionBackground());
-            } else {
-                setForeground(table.getForeground());
-                setBackground(UIManager.getColor("Button.background"));
-            }
-            setText((value == null) ? "" : value.toString());
-            return this;
-        }
-    }
-    class ButtonEditor extends DefaultCellEditor {
-        protected JButton button;
-        
-        private String label;
-        
-        private boolean isPushed;
-        
-        private Jaeger _jaeger;
-        
-        public ButtonEditor(JCheckBox checkBox) {
-            super(checkBox);
-            button = new JButton("Poke");
-            button.setOpaque(true);
-            button.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(java.awt.event.ActionEvent e) {                  
-                    fireEditingStopped();
-                }
-            });
-        }
-        public Component getTableCellEditorComponent(JTable table, Object value,
-                boolean isSelected, int row, int column) {
-            _jaeger = ((SVEmpTableModel)_empTable.getModel()).getJaegerAt(row);
-            if (isSelected) {
-                button.setForeground(table.getSelectionForeground());
-                button.setBackground(table.getSelectionBackground());
-            } else {
-                button.setForeground(table.getForeground());
-                button.setBackground(table.getBackground());
-            }
-            label = (value == null) ? "" : value.toString();
-            button.setText(label);
-            isPushed = true;
-            return button;
-        }
-        
-        public Object getCellEditorValue() {
-            if (isPushed) {
-                //
-                //
-                JOptionPane.showMessageDialog(null, "Email sent to: " + _jaeger.getEmail());
-                // System.out.println(label + ": Ouch!");
-            }
-            isPushed = false;
-            return new String(label);
-        }
-        
-        public boolean stopCellEditing() {
-            isPushed = false;
-            return super.stopCellEditing();
-        }
-        
-        protected void fireEditingStopped() {
-            super.fireEditingStopped();
-        }
-    }
+    
+    
 }

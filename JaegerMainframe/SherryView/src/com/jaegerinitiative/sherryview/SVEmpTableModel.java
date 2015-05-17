@@ -25,15 +25,13 @@ public class SVEmpTableModel implements TableModel{
         return (0 + (int)(Math.random()*10)); 
     }
 
-    private Object getPokeButton(Jaeger get) {
-       return new JButton("POKE");
-    }
-    protected enum ColumnList{
+    
+    protected enum ColumnListEmp{
         EMPNAME(0, "Employee", String.class), HOURS(1, "Hours", String.class), POKE(2, "Poke", String.class);
         private int _column;
         private String _name;
         private Class _colClass;
-        private ColumnList(int value, String name, Class colClass) {
+        private ColumnListEmp(int value, String name, Class colClass) {
                 this._column = value;
                 this._name = name;
                 this._colClass = colClass;
@@ -64,14 +62,14 @@ public class SVEmpTableModel implements TableModel{
 
     @Override
     public int getColumnCount() {
-        return ColumnList.values().length;
+        return ColumnListEmp.values().length;
     }
 
     @Override
     public String getColumnName(int columnIndex) {
-        for(int i = 0; i < ColumnList.values().length;i++)
+        for(int i = 0; i < ColumnListEmp.values().length;i++)
         {
-            ColumnList col = ColumnList.values()[i];
+            ColumnListEmp col = ColumnListEmp.values()[i];
             
             if(col.getColumn() == columnIndex)
             {
@@ -83,9 +81,9 @@ public class SVEmpTableModel implements TableModel{
 
     @Override
     public Class<?> getColumnClass(int columnIndex) {
-        for(int i = 0; i < ColumnList.values().length;i++)
+        for(int i = 0; i < ColumnListEmp.values().length;i++)
         {
-            ColumnList col = ColumnList.values()[i];
+            ColumnListEmp col = ColumnListEmp.values()[i];
             
             if(col.getColumn() == columnIndex)
             {
@@ -97,7 +95,7 @@ public class SVEmpTableModel implements TableModel{
 
     @Override
     public boolean isCellEditable(int rowIndex, int columnIndex) {
-        if(columnIndex == ColumnList.POKE.getColumn())
+        if(columnIndex == ColumnListEmp.POKE.getColumn())
         {
             return true;
         }
@@ -106,15 +104,15 @@ public class SVEmpTableModel implements TableModel{
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
-        if(columnIndex == ColumnList.EMPNAME.getColumn())
+        if(columnIndex == ColumnListEmp.EMPNAME.getColumn())
         {
             return _jaegerList.get(rowIndex).getName();
         }
-        else if(columnIndex == ColumnList.HOURS.getColumn())
+        else if(columnIndex == ColumnListEmp.HOURS.getColumn())
         {
             return findMonthlyHours(_jaegerList.get(rowIndex));
         }
-        else if(columnIndex == ColumnList.POKE.getColumn())
+        else if(columnIndex == ColumnListEmp.POKE.getColumn())
         {
             return "Poke";
         }

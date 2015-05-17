@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.jaegerinitiative.data">
-    <module_version install_time="1431901084946" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1431903003841" last="true" origin="installer" specification_version="1.0">
         <file crc="3613231951" name="config/Modules/com-jaegerinitiative-data.xml"/>
-        <file crc="2052278259" name="modules/com-jaegerinitiative-data.jar"/>
+        <file crc="2261345490" name="modules/com-jaegerinitiative-data.jar"/>
     </module_version>
 </module>

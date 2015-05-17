@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><module codename="com.jaegerinitiative.mainframe">
-    <module_version install_time="1431901086013" last="true" origin="installer" specification_version="1.0">
+    <module_version install_time="1431903004014" last="true" origin="installer" specification_version="1.0">
         <file crc="3424038149" name="config/Modules/com-jaegerinitiative-mainframe.xml"/>
-        <file crc="3176338534" name="modules/com-jaegerinitiative-mainframe.jar"/>
+        <file crc="2541297612" name="modules/com-jaegerinitiative-mainframe.jar"/>
     </module_version>
 </module>
