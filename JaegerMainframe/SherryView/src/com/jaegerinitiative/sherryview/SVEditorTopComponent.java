@@ -26,7 +26,7 @@ import org.openide.util.Utilities;
 @TopComponent.Description(
         preferredID = "SherryViewEditorTopComponentTopComponent",
         iconBase = "com/jaegerinitiative/sherryview/image001.png",
-        persistenceType = TopComponent.PERSISTENCE_ALWAYS
+        persistenceType = TopComponent.PERSISTENCE_NEVER
 )
 @TopComponent.Registration(mode = "editor", openAtStartup = false)
 @ActionID(category = "Window", id = "com.jaegerinitiative.sherryview.SherryViewEditorTopComponentTopComponent")

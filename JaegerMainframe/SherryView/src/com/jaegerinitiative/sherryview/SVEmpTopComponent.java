@@ -24,7 +24,7 @@ import org.openide.util.NbBundle.Messages;
 @TopComponent.Description(
         preferredID = "SVEditorTopComponentTopComponent",
         //iconBase="SET/PATH/TO/ICON/HERE", 
-        persistenceType = TopComponent.PERSISTENCE_ALWAYS
+        persistenceType = TopComponent.PERSISTENCE_NEVER
 )
 @TopComponent.Registration(mode = "properties", openAtStartup = true)
 @ActionID(category = "Window", id = "com.jaegerinitiative.sherryview.SVEditorTopComponentTopComponent")

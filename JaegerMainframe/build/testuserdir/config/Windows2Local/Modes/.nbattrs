@@ -2,7 +2,7 @@
 <!DOCTYPE attributes PUBLIC "-//NetBeans//DTD DefaultAttributes 1.0//EN" "http://www.netbeans.org/dtds/attributes-1_0.dtd">
 <attributes version="1.0">
     <fileobject name="editor">
-        <attr name="WinSys-TCRef-Order" stringvalue="SherryViewEditorTopComponentTopComponent_7/SherryViewEditorTopComponentTopComponent_3/SherryViewEditorTopComponentTopComponent/SherryViewEditorTopComponentTopComponent_2/SherryViewEditorTopComponentTopComponent_4/SherryViewEditorTopComponentTopComponent_1/SherryViewEditorTopComponentTopComponent_5/SherryViewEditorTopComponentTopComponent_6"/>
+        <attr name="WinSys-TCRef-Order" stringvalue="SherryViewEditorTopComponentTopComponent_7/SherryViewEditorTopComponentTopComponent_3/SherryViewEditorTopComponentTopComponent/SherryViewEditorTopComponentTopComponent_2/SherryViewEditorTopComponentTopComponent_4/SherryViewEditorTopComponentTopComponent_1/SherryViewEditorTopComponentTopComponent_5/SherryViewEditorTopComponentTopComponent_6/SherryViewEditorTopComponentTopComponent_8"/>
     </fileobject>
     <fileobject name="explorer">
         <attr name="WinSys-TCRef-Order" stringvalue="favorites"/>
