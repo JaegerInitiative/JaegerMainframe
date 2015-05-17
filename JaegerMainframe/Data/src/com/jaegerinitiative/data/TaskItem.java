@@ -10,15 +10,18 @@ package com.jaegerinitiative.data;
  *
  * @author Gypsy Danger
  */
-public class TaskItem {
-    String _taskItemId;
-    String _description;
-    String _activeStaff;
-    double _funded;
-    double _spent;
+public class TaskItem extends AbstractDataObject{
     
-    public TaskItem() {
-        
+    private String _taskItemId;
+    private String _taskDescription;
+    private float _taskEstimate;
+    private boolean _taskFunded;
+
+    public TaskItem(String _taskItemId, String _taskDescription, float _taskEstimate, boolean _taskFunded) {
+        this._taskItemId = _taskItemId;
+        this._taskDescription = _taskDescription;
+        this._taskEstimate = _taskEstimate;
+        this._taskFunded = _taskFunded;
     }
     
     public String getTaskItemId() {
@@ -28,36 +31,28 @@ public class TaskItem {
     public void setTaskItemId(String taskItemID) {
         _taskItemId = taskItemID;
     }
-    
-    public String getDescription() {
-        return _description;
+
+    public String getTaskDescription() {
+        return _taskDescription;
     }
-    
-    public void setDescription(String description) {
-        _description = description;
+
+    public void setTaskDescription(String _taskDescription) {
+        this._taskDescription = _taskDescription;
     }
-    
-    public String getActiveStaff() {
-        return _activeStaff;
+
+    public float getTaskEstimate() {
+        return _taskEstimate;
     }
-    
-    public void setActiveStaff(String activeStaff) {
-        _activeStaff = activeStaff;
+
+    public void setTaskEstimate(float _taskEstimate) {
+        this._taskEstimate = _taskEstimate;
     }
-    
-    public double getFunded() {
-        return _funded;
+
+    public boolean isTaskFunded() {
+        return _taskFunded;
     }
-    
-    public void setFunded(double funded) {
-        _funded = funded;
-    }
-    
-    public double getSpent() {
-        return _spent;
-    }
-    
-    public void setSpent(double spent) {
-        _spent = spent;
+
+    public void setTaskFunded(boolean _taskFunded) {
+        this._taskFunded = _taskFunded;
     }
 }
